@@ -20,7 +20,7 @@ L’application doit permettre de gérer des porte-feuilles (Wallets) de devises
      - Date de création
      - Devise
 
-   ![Gestion des Wallets](chemin/vers/image_gestion_wallets.png) <!-- Ajoutez ici une image de démonstration -->
+   ![Gestion des Wallets](images/img_1-client.png) 
 
 2. **Gestion des Transferts** :
    - Chaque transfert est défini par :
@@ -31,7 +31,7 @@ L’application doit permettre de gérer des porte-feuilles (Wallets) de devises
      - Montant
      - État (PENDING, VALIDATED, REJECTED)
 
-   ![Gestion des Transferts](chemin/vers/image_gestion_transferts.png) <!-- Ajoutez ici une image de démonstration -->
+   ![Gestion des Transferts](chemin/vers/image_gestion_transferts.png) 
 
 ### Micro-services Techniques
 
@@ -43,7 +43,7 @@ L’application doit permettre de gérer des porte-feuilles (Wallets) de devises
 
 - Génération de la documentation des services web RESTful en utilisant la spécification OpenAPIDoc (Swagger).
 
-   ![Documentation API](chemin/vers/image_documentation_api.png) <!-- Ajoutez ici une image de démonstration -->
+   ![Documentation API](chemin/vers/image_documentation_api.png) 
 
 ## Etapes
 
@@ -61,7 +61,7 @@ L’application doit permettre de gérer des porte-feuilles (Wallets) de devises
 
 3. frontend web pour l’application.
 
-   ![Frontend de l'Application](chemin/vers/image_frontend_application.png) <!-- Ajoutez ici une image de démonstration -->
+   ![Frontend de l'Application](chemin/vers/image_frontend_application.png) 
 
 
 
