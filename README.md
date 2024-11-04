@@ -36,8 +36,8 @@ L’application doit permettre de gérer des porte-feuilles (Wallets) de devises
 ### Micro-services Techniques
 
 - **Service Gateway** : Basé sur Spring Cloud Gateway
-- **Service Discovery** : Basé sur Eureka Server ou Consul Discovery (au choix)
-- **Service de Configuration** : Basé sur Spring Cloud Config ou Consul Config (au choix)
+- **Service Discovery** :Consul Discovery 
+- **Service de Configuration** :  Consul Config 
 
 ### Documentation
 
@@ -45,9 +45,9 @@ L’application doit permettre de gérer des porte-feuilles (Wallets) de devises
 
    ![Documentation API](chemin/vers/image_documentation_api.png) <!-- Ajoutez ici une image de démonstration -->
 
-## Travaux Demandés
+## Etapes
 
-1. Créer un projet vide incluant les micro-services suivants :
+1. Créations des  micro-services  :
    - wallet-service
    - transfer-service
    - gateway-service
@@ -59,30 +59,20 @@ L’application doit permettre de gérer des porte-feuilles (Wallets) de devises
    - gateway-service
    - config-service
 
-3. Développer et tester le micro-service wallet-service.
-
-4. Développer et tester le micro-service transfer-service.
-
-5. Développer un simple frontend web pour l’application.
+3. frontend web pour l’application.
 
    ![Frontend de l'Application](chemin/vers/image_frontend_application.png) <!-- Ajoutez ici une image de démonstration -->
 
-6. Proposer une solution pour sécuriser l’application.
+
 
 ## Technologies Utilisées
 
 - **Backend** : 
   - Spring Boot
   - Spring Cloud
-  - Eureka / Consul (pour la découverte de services)
+  - Consul (pour la découverte de services)
   - Swagger (pour la documentation API)
 
 - **Frontend** : 
-  - Angular / React
+  - Angular 
 
-## Installation
-
-1. Clonez le repository :
-   ```bash
-   git clone <url_du_repository>
-   cd <nom_du_dossier>
