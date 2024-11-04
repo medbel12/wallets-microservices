@@ -1,59 +1,88 @@
-# Wallet Management Application POC
+# POC - Application de Gestion des Porte-feuilles
 
 ## Problème
-Nous souhaitons développer un POC (Proof Of Concept) sous forme d’une application web basée sur une architecture micro-service en utilisant l’écosystème **Spring Boot** et **Spring Cloud** côté backend, et un framework comme **Angular** ou **React** côté frontend. 
 
-L’application doit permettre de gérer des portefeuilles (Wallets) de devises ainsi que les transferts entre les portefeuilles. Cette application se composera de deux micro-services fonctionnels :
+Ce projet consiste à développer un POC (Proof Of Concept) sous la forme d’une application web basée sur une architecture micro-service, utilisant l’écosystème Spring Boot et Spring Cloud côté backend, et un framework comme Angular ou React côté frontend. 
 
-1. **Micro-service Wallet** : 
-   - Gère les « Wallet ». 
+L’application doit permettre de gérer des porte-feuilles (Wallets) de devises ainsi que les transferts entre les porte-feuilles. 
+
+### Fonctionnalités Principales
+
+1. **Gestion des Wallets** :
    - Chaque Wallet appartient à un client.
-   - Un client est défini par son ID (numérique auto-incrémenté), son nom et son email.
-   - Un Wallet est défini par son ID (String de type UUID), son solde, sa date de création et sa devise.
+   - Un client est défini par :
+     - ID (numérique auto-incrémenté)
+     - Nom
+     - Email
+   - Un Wallet est défini par :
+     - ID (String de type UUID)
+     - Solde
+     - Date de création
+     - Devise
 
-2. **Micro-service Transfer** : 
-   - Gère les transferts entre les Wallets.
-   - Chaque transfert est défini par son ID, sa date, le Wallet source, le Wallet destination, son montant et son état (PENDING, VALIDATED, REJECTED).
+   ![Gestion des Wallets](chemin/vers/image_gestion_wallets.png) <!-- Ajoutez ici une image de démonstration -->
 
-## Micro-services Techniques
-Les micro-services techniques à mettre en place sont :
+2. **Gestion des Transferts** :
+   - Chaque transfert est défini par :
+     - ID
+     - Date
+     - Wallet source
+     - Wallet destination
+     - Montant
+     - État (PENDING, VALIDATED, REJECTED)
 
-- **Gateway Service** basé sur **Spring Cloud Gateway**
-- **Discovery Service** basé sur **Eureka Server** ou **Consul Discovery** (au choix)
-- **Configuration Service** basé sur **Spring Cloud Config** ou **Consul Config** (au choix)
+   ![Gestion des Transferts](chemin/vers/image_gestion_transferts.png) <!-- Ajoutez ici une image de démonstration -->
 
-Pour les micro-services, il est nécessaire de générer la documentation des web services RESTful en utilisant la spécification **OpenAPI** (Swagger).
+### Micro-services Techniques
 
-## Travail à Réaliser
-1. Créer un projet vide incluant les micro-services suivants : 
-   - `wallet-service`
-   - `transfer-service`
-   - `gateway-service`
-   - `discovery-service`
-   - `config-service`
-   
+- **Service Gateway** : Basé sur Spring Cloud Gateway
+- **Service Discovery** : Basé sur Eureka Server ou Consul Discovery (au choix)
+- **Service de Configuration** : Basé sur Spring Cloud Config ou Consul Config (au choix)
+
+### Documentation
+
+- Génération de la documentation des services web RESTful en utilisant la spécification OpenAPIDoc (Swagger).
+
+   ![Documentation API](chemin/vers/image_documentation_api.png) <!-- Ajoutez ici une image de démonstration -->
+
+## Travaux Demandés
+
+1. Créer un projet vide incluant les micro-services suivants :
+   - wallet-service
+   - transfer-service
+   - gateway-service
+   - discovery-service
+   - config-service
+
 2. Développer et tester les micro-services :
-   - **discovery-service**
-   - **gateway-service**
-   - **config-service**
+   - discovery-service
+   - gateway-service
+   - config-service
 
-3. Développer et tester le micro-service **wallet-service**.
+3. Développer et tester le micro-service wallet-service.
 
-4. Développer et tester le micro-service **transfer-service**.
+4. Développer et tester le micro-service transfer-service.
 
 5. Développer un simple frontend web pour l’application.
 
+   ![Frontend de l'Application](chemin/vers/image_frontend_application.png) <!-- Ajoutez ici une image de démonstration -->
+
 6. Proposer une solution pour sécuriser l’application.
 
-## Installation et Configuration
+## Technologies Utilisées
 
-### Prérequis
-- Java JDK (version 11 ou supérieure)
-- Maven (version 3.6 ou supérieure)
-- Node.js et npm (pour le frontend, si Angular ou React est utilisé)
+- **Backend** : 
+  - Spring Boot
+  - Spring Cloud
+  - Eureka / Consul (pour la découverte de services)
+  - Swagger (pour la documentation API)
 
-### Étapes d'Installation
-1. Clonez le dépôt :
+- **Frontend** : 
+  - Angular / React
+
+## Installation
+
+1. Clonez le repository :
    ```bash
-   git clone <repository-url>
-   cd wallet-management
+   git clone <url_du_repository>
+   cd <nom_du_dossier>
