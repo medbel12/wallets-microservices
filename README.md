@@ -20,9 +20,10 @@ L’application doit permettre de gérer des porte-feuilles (Wallets) de devises
      - Date de création
      - Devise
 
-   ![Gestion des Wallets](images/img_1-client.png) 
+   ![Gestion des Wallets](images/img_1-client.png)
+   ![Gestion des Wallets](images/img_1-wallet.png) 
 
-2. **Gestion des Transferts** :
+3. **Gestion des Transferts** :
    - Chaque transfert est défini par :
      - ID
      - Date
